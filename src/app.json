@@ -5,6 +5,7 @@
     "pages/cart/main",
     "pages/me/main",
     "pages/searchlist/main",
+    "pages/search/main",
     "pages/detail/main"
 
   ],

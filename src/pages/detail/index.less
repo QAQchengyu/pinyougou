@@ -30,20 +30,28 @@
             padding-right: 80rpx;
             box-sizing: border-box;
             border-right: 1px solid #ddd;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
+            overflow:hidden; 
+            text-overflow:ellipsis;
+            display:-webkit-box; 
+            -webkit-box-orient:vertical;
+            -webkit-line-clamp:2; 
         }
         .shoucang {
             flex: 1;
             display: flex;
             flex-direction: column;
+            position: relative;
             span {
                 text-align: center;
                 font-size: 14px;
                 color: #999;
+            }
+            .mybtn {
+                position: absolute;
+                top: 25rpx;
+                left: 35rpx;
+                height: 50rpx;
+                opacity: 0;
             }
         }
     }
@@ -56,7 +64,6 @@
 }
 .jieshao {
     width: 100%;
-
     .title {
         height: 100rpx;
         line-height: 100rpx;
@@ -64,7 +71,6 @@
         padding-left: 20rpx;
     }
 }
-
 .bottom {
     position: fixed;
     bottom: 0;
@@ -74,9 +80,7 @@
     line-height: 100rpx;
     display: flex;
     text-align: center;
-
-    .callme,
-    .cart {
+    .callme, .cart {
         width: 20%;
         height: 100rpx;
         line-height: 45rpx;
@@ -84,20 +88,17 @@
         color: #999;
         display: flex;
         flex-direction: column;
+        background-color: #fff;
     }
-
-    .incart,
-    .buy {
+    .incart, .buy {
         width: 30%;
         height: 100rpx;
         font-size: 16px;
         color: #fff;
     }
-
     .incart {
         background-color: #f4b73f;
     }
-
     .buy {
         background-color: #eb4450;
     }
